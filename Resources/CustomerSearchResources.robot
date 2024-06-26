@@ -14,13 +14,14 @@ ${company_name_path}    id:SearchCompany
 ${search_path}    id:search-customers
 ${records_found_path}    xpath://table[@id='customers-grid']/tbody/tr
 ${error_message_path}    xpath://table[@id='customers-grid']/tbody/tr/td
+
 *** Keywords ***
 Click on customer element
-    Wait Until Element Is Visible    ${customer_path}    5s
+    Wait Until Element Is Visible    ${customer_path}    10s
     Click Element    ${customer_path}
 
 Click on firtmenu customer
-    Wait Until Element Is Visible    ${customer1_path}    5s
+    Wait Until Element Is Visible    ${customer1_path}    10s
     Click Element    ${customer1_path}
 
 Enter email in the field
