@@ -11,16 +11,16 @@ Test Teardown    Close the browser
 *** Test Cases ***
 Edit details in customer page
     [Template]    Edit Details
-    ${editemail}    ${password}    ${fname}    ${lname}    ${gender}    ${dob}    ${company_name}    ${tax}    ${active}    ${admin_content}
+    ${editemail}    ${password}    ${fname}    ${lname}    ${gender}    ${dob}    ${company_name}    ${tax}    ${manager_of_vendor}    ${active}    ${admin_content}
 
 *** Keywords ***
 Edit Details
-    [Arguments]    ${editemail}    ${password}    ${fname}    ${lname}    ${gender}    ${dob}    ${company_name}    ${tax}    ${active}    ${admin_content}
+    [Arguments]    ${editemail}    ${password}    ${fname}    ${lname}    ${gender}    ${dob}    ${company_name}    ${tax}    ${manager_of_vendor}    ${active}    ${admin_content}
     Valid Login
     Click on customer element
     Click on firtmenu customer
     Click on edit button
     Verify edit button navigates to edit page
-    Edit inforamtion provided    ${editemail}    ${password}    ${fname}    ${lname}    ${gender}    ${dob}    ${company_name}    ${tax}    ${active}    ${admin_content}
+    Edit inforamtion provided    ${editemail}    ${password}    ${fname}    ${lname}    ${gender}    ${dob}    ${company_name}    ${tax}    ${manager_of_vendor}    ${active}    ${admin_content}
     Click on save button
     Assert edit is successfull

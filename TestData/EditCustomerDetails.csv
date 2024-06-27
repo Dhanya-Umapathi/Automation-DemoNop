@@ -1,2 +1,2 @@
-${editemail};${password};${fname};${lname};${gender};${dob};${company_name};${tax};${active};${admin_content};
-vimal@youstore.com;vml1814;Vimal;Raj;male;5-11-1998;Tester;yes;no;Testing Done Buddy
+${editemail};${password};${fname};${lname};${gender};${dob};${company_name};${tax};@{role};${manager_of_vendor};${active};${admin_content};
+vimalraju@youstore.com;vml1814;Vimal;Raj;male;5-11-1998;Tester;yes;Administrators;Vendor 1;no;Testing Done Buddy
